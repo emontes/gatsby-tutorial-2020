@@ -1,13 +1,13 @@
 import React from "react"
-import styles from "../components/blog.module.css"
+import * as blogStyles from "../components/blog.module.css"
 
 import Layout from "../components/layout"
 const blog = () => {
   return (
     <Layout>
-      <div className={styles.page}>
+      <div className={blogStyles.page}>
         <h1>this is our blog page</h1>
-        <p className={styles.text}>
+        <p className={blogStyles.text}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
           voluptatem! Pariatur ipsam eum quas error. Facilis ex in hic
           recusandae eveniet vitae, voluptatum sint laudantium.
