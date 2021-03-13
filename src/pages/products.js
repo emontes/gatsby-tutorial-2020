@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import styles from "../components/products.module.css"
+import * as productStyles from "../components/products.module.css"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 const ComponentName = ({ data }) => {
@@ -11,7 +11,7 @@ const ComponentName = ({ data }) => {
 
   return (
     <Layout>
-      <section className={styles.page}>
+      <section className={productStyles.page}>
         {products.map(product => {
           return (
             <article key={product.id}>
